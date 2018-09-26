@@ -11,5 +11,10 @@ def stair_case(steps, storage):
 	if (steps <= 1):
 		return 1
 
+	# If result was already found and stored,
+	# no need to repeat computation
+	if (storage[steps]):
+		return storage[steps] 	
+
 
 
